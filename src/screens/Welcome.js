@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import styled from 'styled-components/native';
 import LottieView from 'lottie-react-native';
 
@@ -11,7 +12,7 @@ const Page = styled.SafeAreaView`
 `;
 
 const Title = styled.Text`
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   margin: 20px;
@@ -20,7 +21,7 @@ const Title = styled.Text`
 `;
 
 const SubTitle = styled.Text`
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   color:#A8A8A8;
   
@@ -28,10 +29,14 @@ const SubTitle = styled.Text`
 
 export default (props) => {
   return (
-    <Page onLoad={setTimeout(() => {props.navigation.navigate('Home')}, 1200)}>
-      <LottieView autoSize source={covid} autoPlay loop />
-      <Title>Vacinas salvam vidas!</Title>
-      <SubTitle>Não seja idiota</SubTitle>
+    <Page onLoad={setTimeout(() => {props.navigation.navigate('Home')}, 1500)}>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <Title>Vacinas salvam vidas!</Title>
+        <SubTitle>Não seja idiota</SubTitle>
+      </View>
+      <View style={{flex: 3}}>
+        <LottieView style={{width: 600}} source={covid} autoPlay loop />
+      </View>
     </Page>
     
   );
