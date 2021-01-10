@@ -1,23 +1,13 @@
 import React from 'react';
-import {
-  StyleSheet,
-  ScrollView,
-  View,
-  Text
-} from 'react-native';
+import { NavigationContainer  } from '@react-navigation/native';
+import MainStack from './src/navigators/MainStack';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <View>
-        <Text>Teste</Text>
-      </View>
-    </>
+    <NavigationContainer>
+      <MainStack />
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
- 
-});
 
 export default App;
