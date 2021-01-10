@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components/native'
+import { Button, View } from 'react-native';
+import styled from 'styled-components/native';
 
 const Page = styled.SafeAreaView`
   flex: 1;
@@ -9,12 +10,13 @@ const Page = styled.SafeAreaView`
 
 const Text = styled.Text`
   font-size: 20px;
+  
 `;
-
-export default () => {
+export default (props) => {
   return (
-    <Page>
-      <Text>Welcome Motherfuck</Text>
+    <Page onLoad={setTimeout(() => {props.navigation.navigate('Home')}, 5000)}>
+      <Text>Vacina salva vidas!</Text>
     </Page>
+    
   );
 }
