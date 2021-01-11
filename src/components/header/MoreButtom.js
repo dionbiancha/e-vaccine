@@ -6,10 +6,12 @@ import {
   View,
   StyleSheet
 } from 'react-native';
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
+import LottieView from 'lottie-react-native';
 
 import question from '../../images/question.png';
 import close from '../../images/close.png';
+import modal from '../../lottie/modal.json';
 
 const Page = styled.SafeAreaView`
   flex: 1;
@@ -19,17 +21,31 @@ const Page = styled.SafeAreaView`
   background-color:rgba(0, 0, 0, 0.7);
 `;
 
-const Text = styled.Text`
-  text-align: center;
-  font-size: 15px;
-`;
 const TextModal = styled.SafeAreaView`
+  justify-content: center;
   align-items: center;
   background-color: #FFF;
   border-radius: 20px;
   width: 80%;
-  height: 50%;
-  
+  height: 50%; 
+`;
+
+const Title = styled.Text`
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+`;
+
+const Text = styled.Text`
+  text-align: center;
+  font-size: 15px;
+  margin: 5px;
+`;
+const Idiot = styled.Text`
+  text-align: center;
+  font-size: 10px;
+  color: gray;
 `;
 
 export default () => {
@@ -53,7 +69,11 @@ export default () => {
             </TouchableOpacity>
           </View>
           <TextModal>
-            <Text>Hello World!</Text>
+            <Title>Parabens</Title>
+            <Text>Você acaba de baixar sua primeira dose da vacina digital contra o covid-404.</Text>
+            <Text style={{color: 'red', fontWeight: 'bold'}}>#VACINAS_SALVAM_VIDAS</Text>
+            <LottieView style={{height:130}} source={modal} autoPlay loop />
+            <Idiot>Não seja idiota</Idiot>
           </TextModal>
         </Page>
       </Modal>
