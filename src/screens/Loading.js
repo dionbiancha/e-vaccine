@@ -2,6 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import styled from 'styled-components/native';
 import LottieView from 'lottie-react-native';
+import Sound from 'react-native-sound';
 
 import covid from '../lottie/welcome.json';
 
@@ -26,6 +27,10 @@ const SubTitle = styled.Text`
   color:#A8A8A8;
   
 `;
+
+//Sound.setCategory('Ambient', true);
+
+//const buttonPress = new Sound(require('../audio/button.mp3'), error => console.log(error));
 
 export default (props) => {
   return (

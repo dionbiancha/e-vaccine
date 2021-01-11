@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
-import { Image, StyleSheet, TouchableOpacity, Modal } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { Image, 
+  StyleSheet, 
+  TouchableOpacity, 
+  Modal,
+  BackHandler, Alert 
+  } from 'react-native';
 import styled from 'styled-components/native';
 import LottieView from 'lottie-react-native';
 
 import seringa from '../images/seringa.png';
-import loadAnim from '../lottie/loadAnim.json';
+import modal from '../lottie/modal.json';
 
 const Page = styled.SafeAreaView`
   flex: 1;
@@ -17,7 +22,22 @@ const PageModal = styled.SafeAreaView`
   justify-content: center;
   align-items: center; 
   z-index: 90;
-  background-color:rgba(0, 0, 0, 0.7);
+  background-color:#FFF;
+`;
+
+const Title = styled.Text`
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  
+`;
+
+const SubTitle = styled.Text`
+  text-align: center;
+  margin: 10px;
+  font-size: 15px;
+  
 `;
 
 const Text = styled.Text`
@@ -44,6 +64,29 @@ export default () => {
 
   const [load, setLoad] = useState(false);
 
+  componentWillMount = () => {
+    BackHandler.addEventListener('hardwareBackPress', () => true);
+  }
+
+  const backAction = () => {
+    Alert.alert("Hey!", "Tem certeza que deseja sair?", [
+      {
+        text: "NÃO",
+        onPress: () => null,
+        style: "cancel"
+      },
+      { text: "Me tire daqui", onPress: () => BackHandler.exitApp() }
+    ]);
+    return true;
+  };
+
+  useEffect(() => {
+    BackHandler.addEventListener("hardwareBackPress", backAction);
+
+    return () =>
+      BackHandler.removeEventListener("hardwareBackPress", backAction);
+  }, []);
+
   return (
     <>
       <Page>
@@ -57,12 +100,14 @@ export default () => {
         <Image style={styles.seringa} source={seringa}/>
       </Page>
       <Modal
-        animationType="slide"
+        animationType="fade"
         transparent={true}
         visible={load}
       >
         <PageModal>
-          <LottieView style={{width: 300}} source={loadAnim} autoPlay loop />
+          <Title>Vacina 404 not found</Title>
+          <SubTitle>Continue seguindo as medidas de segurança recomendadas pela OMS.</SubTitle>
+          <LottieView style={{width: 400}} source={modal} autoPlay loop />
         </PageModal>
 
       </Modal>

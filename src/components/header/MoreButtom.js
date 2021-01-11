@@ -7,11 +7,10 @@ import {
   StyleSheet
 } from 'react-native';
 import styled from 'styled-components/native';
-import LottieView from 'lottie-react-native';
+import VideoPlayer from '../body/VideoPlayer';
 
 import question from '../../images/question.png';
 import close from '../../images/close.png';
-import modal from '../../lottie/modal.json';
 
 const Page = styled.SafeAreaView`
   flex: 1;
@@ -58,7 +57,7 @@ export default () => {
         <Image source={question} style={{height: 30, width: 30, marginRight: 10}}/>
       </TouchableOpacity>
       <Modal
-        animationType="slide"
+        animationType="fade"
         transparent={true}
         visible={modalVisible}
       >
@@ -72,7 +71,7 @@ export default () => {
             <Title>Parabens</Title>
             <Text>Você acaba de baixar sua primeira dose da vacina digital contra o covid-404.</Text>
             <Text style={{color: 'red', fontWeight: 'bold'}}>#VACINAS_SALVAM_VIDAS</Text>
-            <LottieView style={{height:130}} source={modal} autoPlay loop />
+            <VideoPlayer />
             <Idiot>Não seja idiota</Idiot>
           </TextModal>
         </Page>
@@ -88,5 +87,8 @@ const styles = StyleSheet.create({
     marginRight: 50, 
     marginBottom: -20, 
     zIndex: 1
+  },
+  backgroundVideo: {
+    flex: 1
   }
 });
