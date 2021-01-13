@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="e-Vaccine" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610504052/github/vacina_lnj1ma.png" />
+    <img alt="e-Vaccine" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/vaccine_eav8g8.png" />
     <br>
     e-Vaccine
 </h1>
@@ -34,8 +34,8 @@
   <a href="#memo-license">License</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610503959/github/e-vaccine-1_vxy7ws.png)
-![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610503959/github/e-vaccine-2_isumsu.png)
+![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/e-vaccine-1_eleonq.png)
+![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/e-vaccine-2_phvm94.png)
 
 ## :computer: Technologies
 
@@ -73,7 +73,7 @@ This project is under the MIT license. See the [LICENSE](https://github.com/dion
 
 ---
 
-Made with ♥ by Luke Morales :wave: [Get in touch!](https://www.linkedin.com/in/dionbiancha/)
+Made with :heartpulse: by Dionei Bianchati :wave: [Get in touch!](https://www.linkedin.com/in/dionbiancha/)
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
