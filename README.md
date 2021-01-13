@@ -35,7 +35,7 @@
 </p>
 
 ![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/e-vaccine-1_eleonq.png)
-![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504538/github/e-vaccine-2_zgrgxg.png)
+![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504909/github/e-vaccine-2_hwf67r.png)
 
 ## :computer: Technologies
 
