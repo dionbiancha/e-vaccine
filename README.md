@@ -1,11 +1,11 @@
 <h1 align="center">
-    <img alt="e-Vaccine" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/vaccine_eav8g8.png" />
+    <img alt="e-Vaccine" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610804085/github/favicon_bhezhh.ico" />
     <br>
     e-Vaccine
 </h1>
 
 <h4 align="center">
-  Covid-404 digital vaccine application
+  Fake application of Covid-404 digital vaccine
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/dionbiancha/e-vaccine.svg">
