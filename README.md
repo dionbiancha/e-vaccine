@@ -1,6 +1,4 @@
 <h1 align="center">
-    <img alt="e-Vaccine" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610804085/github/favicon_bhezhh.ico" />
-    <br>
     e-Vaccine
 </h1>
 
