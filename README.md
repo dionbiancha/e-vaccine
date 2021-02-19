@@ -32,8 +32,11 @@
   <a href="#memo-license">License</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/e-vaccine-1_eleonq.png)
-![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610504909/github/e-vaccine-2_hwf67r.png)
+<p align="center">
+    <img alt="GitHub" width="250px" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610504309/github/e-vaccine-1_eleonq.png">
+    <img alt="GitHub" width="250px" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610504909/github/e-vaccine-2_hwf67r.png">
+</p>
+
 
 ## :computer: Technologies
 
